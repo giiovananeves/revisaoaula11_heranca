@@ -1,6 +1,6 @@
 public class Empregado extends Pessoa {
     private int codigoSetor;
-    private double salariaBase;
+    private double salarioBase;
     private double imposto;
 
 
@@ -21,14 +21,14 @@ public class Empregado extends Pessoa {
 
 
     public double getSalariaBase() {
-        return salariaBase;
+        return salarioBase;
     }
 
 
 
 
-    public void setSalariaBase(double salariaBase) {
-        this.salariaBase = salariaBase;
+    public void setSalariaBase(double salarioBase) {
+        this.salarioBase = salarioBase;
     }
 
 
@@ -48,10 +48,10 @@ public class Empregado extends Pessoa {
 
 
 
-    public void calcularSalario(){
+    public double calcularSalario(){
 
         double salarioLiquido;
-        salarioLiquido=salarioBase-imposto/100*salarioBase;
+       return  salarioLiquido=salarioBase-imposto/100*salarioBase;
 
 
     }
