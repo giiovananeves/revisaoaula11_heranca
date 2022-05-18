@@ -1,35 +1,53 @@
-public class Pessoa{
-
+public class Pessoa
+{
     private String nome;
-    private String endereçco;
-    private String telefone;
-    public String getNome() {
+    private String endereco;
+    private String tel;
+
+    public String getNome() 
+    {
         return nome;
     }
-    public void setNome(String nome) {
+
+    public void setNome(String nome) 
+    {
         this.nome = nome;
-    }
-    public String getEndereçco() {
-        return endereçco;
-    }
-    public void setEndereçco(String endereçco) {
-        this.endereçco = endereçco;
-    }
-    public String getTelefone() {
-        return telefone;
-    }
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
-    public Pessoa(String nome) {
-        this.nome = nome;
-    }
-    public Pessoa(String nome, String endereçco) {
-        this.nome = nome;
-        this.endereçco = endereçco;
     }
 
-    public Pessoa(){
-        
+    public String getEndereco() 
+    {
+        return endereco;
     }
+
+    public void setEndereco(String endereco) 
+    {
+        this.endereco = endereco;
+    }
+
+    public String getTel() 
+    {
+        return tel;
+    }
+    
+    public void setTel(String tel) 
+    {
+        this.tel = tel;
+    }
+
+    public Pessoa(String nome)
+    {
+        this.nome = nome;
+    }
+
+    public Pessoa(String nome, String tel) 
+    {
+        this.nome = nome;
+        this.tel = tel;
+    }
+
+    public Pessoa()
+    {
+
+    }
+
 }

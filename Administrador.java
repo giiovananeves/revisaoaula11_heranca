@@ -1,20 +1,23 @@
-public class Administrador extends Empregado {
-
-    private double ajudaCusto;
+public class Administrador extends Empregado 
+{
+    private double ajudaCustos;
     
-    public double getAjudaCusto() {
-        return ajudaCusto;
+    public double getAjudaCustos() 
+    {
+        return ajudaCustos;
     }
 
-    public void setAjudaCusto(double ajudaCusto) {
-        this.ajudaCusto = ajudaCusto;
-    }
-
-    public double calcularSalario(double ajudaCusto){
-        double salarioLiquido=calcularSalario()+ajudaCusto;
-        return salarioLiquido;
-
+    public void setAjudaCustos(double ajudaCustos) {
+        this.ajudaCustos = ajudaCustos;
     }
 
 
+
+    public double calculaSalario(double ajudaCustos)
+    {
+        double salarioLiq;
+
+        salarioLiq = calculaSalario() + ajudaCustos ;
+        return salarioLiq;
+    }
 }

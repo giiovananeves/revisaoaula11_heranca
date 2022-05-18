@@ -1,17 +1,18 @@
-public class Principal {
-    public static void main(String[] args) {
+public class Principal 
+{
+    public static void main(String[] args) 
+    {
         Empregado empregado = new Empregado();
         Operario operario = new Operario();
-        Administrador administrador = new Administrador();
+        Administrador administador = new Administrador();   
 
-    operario.setSalarioBase(2000);
-    administrador.setSalarioBase(3500);
+        operario.setSalarioBase(2000);
+        administador.setSalarioBase(3500);
 
-    System.out.println(operario.calcularSalario());
-    System.out.println(administrador.calcularSalario(100));
-    
-    System.out.println(operario.calcularSalario(159));
-    
+        System.out.println(operario.calculaSalario());
+        System.out.println(administador.calculaSalario());
+
+        System.out.println(operario.calculaSalario());
     }
-    
+   
 }

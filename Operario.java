@@ -1,28 +1,33 @@
-public class Operario extends Empregado {
-
-    private double valorProducao;
+public class Operario extends Empregado 
+{
+    private double valorProd;
     private double comissao;
 
-    public double getValorProducao() {
-        return valorProducao;
+    
+
+    public double getValorProd() 
+    {
+        return valorProd;
     }
 
-    public void setValorProducao(double valorProducao) {
-        this.valorProducao = valorProducao;
+    public void setValorProd(double valorProd) 
+    {
+        this.valorProd = valorProd;
     }
 
-    public double getComissao() {
+    public double getComissao() 
+    {
         return comissao;
     }
 
-    public void setComissao(double comissao) {
+    public void setComissao(double comissao) 
+    {
         this.comissao = comissao;
     }
 
-    public double calcularSalario(){
-        double salarioLiquido=calcularSalario()+valorProducao*comissao;
-        return salarioLiquido;
+    public double calculaSalario(double comissao)
+    {
+        double salarioLiq = calculaSalario() + valorProd * comissao;
+        return salarioLiq;
     }
-
-    
 }
